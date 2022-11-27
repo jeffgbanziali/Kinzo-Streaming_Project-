@@ -17,14 +17,16 @@ module.exports = {
       },
       colors: {
         main:'#080A1A',
-        subMain: 'yellow',
-        dry:"#F2F2F2",
+        subMain: 'red',
+        dry:"#080A1A",
         star:"#F2C94C",
         text:"#F2F2F2",
         border:"#F2F2F2",
-        dryGray:"#F2F2F2",
+        dryGray:"#BDBDBD",
     },
   },
 },
-  plugins: [],
+  plugins: [
+    require('@tailwindcss/line-clamp'),
+  ],
 }

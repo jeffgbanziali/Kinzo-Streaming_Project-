@@ -44,3 +44,6 @@ input:focus, textarea:focus, select:focus{
 .zIndex {
   z-index: 1000;
 }
+.linear-bg {
+  background: linear-gradient(270deg, #07091c00 0.17%, #080a1ad6 99.87% );
+}

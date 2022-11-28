@@ -13,7 +13,7 @@ function NavBar() {
     return (
         <>
             <div className="bg-main shadow-md sticky top-0 z-20">
-                <div className="container mx-auto px-2 py-6 lg:grid gap-10 grid-cols-7 justify-between items-center">
+                <div className="container mx-auto px-4 py-5 lg:grid gap-10 grid-cols-7 justify-between items-center">
 
 
                     {/* Logo */}

@@ -12,7 +12,7 @@ function HomeScreen() {
     
       <Banner/>
       <PopularMovies/>
-      < NewsMovies />
+      <NewsMovies />
       <TopRated/>
     </div>
     </Layout>

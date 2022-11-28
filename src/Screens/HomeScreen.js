@@ -9,6 +9,7 @@ function HomeScreen() {
   return (
     <Layout>
     <div className='container mx-out min-h-screen px-2 mb-6'>
+    
       <Banner/>
       <PopularMovies/>
       < NewsMovies />

@@ -1,6 +1,6 @@
 import React from 'react'
 
-function FlexMoviesItems(movie) {
+function FlexMoviesItems({movie}) {
   return (
     <>
     <div className="flex items-center gap-2">

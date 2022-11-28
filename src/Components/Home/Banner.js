@@ -6,7 +6,7 @@ import FlexMoviesItems from './FlexMoviesItems';
 
 function Banner() {
     return (
-        <div className='relative w-full'>
+        <div className='relative w-full justify-center'>
             <Swiper
                 direction='vertical'
                 spaceBetween={0}
@@ -24,10 +24,11 @@ function Banner() {
                 {
                     Movies.slice(0.6).map((movie, index) => (
                         <SwiperSlide key={index} className="relative rounded overflow-hidden">
+                           
                             <img
-                                src={`/images/movies/${movie.image}`}
+                                src={movie.image}
                                 alt={movie.name}
-                                className='w-full h-full object-cover' />
+                                className='w-96 h-96 object-cover ' />
                             <div className="absolute linear-bg xl:pl-52 sm:pl-32 pl-8 top-0 flex flex-col justify-center right-0 left-0 lg:gap-8 md:gap-5 gap-4">
                                 <h1 className="text-white text-xl lg:text-3xl xl:text-4xl sm:text-2xl font-sans font-bold truncate capitalize">
                                     {movie.name}

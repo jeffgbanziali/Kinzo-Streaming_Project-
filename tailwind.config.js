@@ -19,7 +19,7 @@ module.exports = {
         main:'#080A1A',
         subMain: 'red',
         dry:"#080A1A",
-        star:"#F2C94C",
+        star:"yellow",
         text:"#F2F2F2",
         border:"#F2F2F2",
         dryGray:"#BDBDBD",

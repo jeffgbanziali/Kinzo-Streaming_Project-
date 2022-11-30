@@ -2,7 +2,7 @@ export const Movies = [
     {
         name: 'My Name',
         description: 'Lorem fij"irnixnsuiofbcsbiuod',
-        titleImage: 'http://www.lorempixel.com/400/200/',
+        titleImage: require("../../src/Images/blackadam.jpg"),
         image: require("../../src/Images/wakanda.jpg"),
         category: 'Action',
         language: 'English',
@@ -16,7 +16,7 @@ export const Movies = [
     {
         name: 'My Name',
         description: 'Lorem fij"irnixnsuiofbcsbiuod',
-        titleImage: 'http://www.lorempixel.com/400/200/',
+        titleImage: require("../../src/Images/blackadam.jpg"),
         image: require("../../src/Images/blackadam.jpg"),
         caterogy: 'Drama',
         language: 'English',
@@ -30,7 +30,7 @@ export const Movies = [
     {
         name: 'My Name',
         description: 'Lorem fij"irnixnsuiofbcsbiuod',
-        titleImage: 'http://www.lorempixel.com/400/200/',
+        titleImage: require("../../src/Images/blackadam.jpg"),
         image: require("../../src/Images/peakyblinders.jpg"),
         caterogy: 'suspen',
         language: 'English',
@@ -44,7 +44,7 @@ export const Movies = [
     {
         name: 'My Name',
         description: 'Lorem fij"irnixnsuiofbcsbiuod',
-        titleImage: 'http://www.lorempixel.com/400/200/',
+        titleImage: require("../../src/Images/blackadam.jpg"),
         image: require("../../src/Images/womanking.jpg"),
         caterogy: 'Fiction',
         language: 'English',
@@ -58,7 +58,7 @@ export const Movies = [
     {
         name: 'My Name',
         description: 'Lorem fij"irnixnsuiofbcsbiuod',
-        titleImage: 'http://www.lorempixel.com/400/200/',
+        titleImage: require("../../src/Images/blackadam.jpg"),
         image: require("../../src/Images/blackadam.jpg"),
         caterogy: 'Romance',
         language: 'English',
@@ -72,7 +72,7 @@ export const Movies = [
     {
         name: 'My Name',
         description: 'Lorem fij"irnixnsuiofbcsbiuod',
-        titleImage: 'http://www.lorempixel.com/400/200/',
+        titleImage: require("../../src/Images/blackadam.jpg"),
         image: require("../../src/Images/blackadam.jpg"),
         caterogy: 'Romance',
         language: 'English',
@@ -86,7 +86,7 @@ export const Movies = [
     {
         name: 'My Name',
         description: 'Lorem fij"irnixnsuiofbcsbiuod',
-        titleImage: 'http://www.lorempixel.com/400/200/',
+        titleImage: require("../../src/Images/blackadam.jpg"),
         image: require("../../src/Images/blackadam.jpg"),
         caterogy: 'Romance',
         language: 'English',
@@ -100,7 +100,7 @@ export const Movies = [
     {
         name: 'My Name',
         description: 'Lorem fij"irnixnsuiofbcsbiuod',
-        titleImage: 'http://www.lorempixel.com/400/200/',
+        titleImage: require("../../src/Images/blackadam.jpg"),
         image: require("../../src/Images/blackadam.jpg"),
         caterogy: 'Romance',
         language: 'English',
@@ -114,7 +114,7 @@ export const Movies = [
     {
         name: 'My Name',
         description: 'Lorem fij"irnixnsuiofbcsbiuod',
-        titleImage: 'http://www.lorempixel.com/400/200/',
+        titleImage: require("../../src/Images/blackadam.jpg"),
         image: require("../../src/Images/blackadam.jpg"),
         caterogy: 'Romance',
         language: 'English',
@@ -128,7 +128,7 @@ export const Movies = [
     {
         name: 'My Name',
         description: 'Lorem fij"irnixnsuiofbcsbiuod',
-        titleImage: 'http://www.lorempixel.com/400/200/',
+        titleImage: require("../../src/Images/blackadam.jpg"),
         image: require("../../src/Images/blackadam.jpg"),
         caterogy: 'Romance',
         language: 'English',
@@ -142,7 +142,7 @@ export const Movies = [
     {
         name: 'My Name',
         description: 'Lorem fij"irnixnsuiofbcsbiuod',
-        titleImage: 'http://www.lorempixel.com/400/200/',
+        titleImage: 'require("../../src/Images/blackadam.jpg")',
         image: require("../../src/Images/blackadam.jpg"),
         caterogy: 'Romance',
         language: 'English',

@@ -7,6 +7,9 @@ import NotFound from './Screens/NotFound';
 import MoviePage from './Screens/MoviePage';
 import SingleMovie from './Screens/SingleMovie';
 import WatchPage from './Screens/WatchPage';
+import Login from './Screens/Login';
+import Register from './Screens/Register';
+import Profile from './Screens/Dashboard/Profile';
 
 
 function App() {
@@ -19,6 +22,9 @@ function App() {
     <Route path="/movies" element={<MoviePage />} />
     <Route path="/movie/:id" element={<SingleMovie />} />
     <Route path="/watch/:id" element={<WatchPage />} />
+    <Route path='/login' element={<Login />} />
+    <Route path='/register' element={<Register />} />
+    <Route path='/profile' element={<Profile />} />
     <Route path="*" element={<NotFound />} />
 
    </Routes>

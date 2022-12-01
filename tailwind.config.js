@@ -18,7 +18,7 @@ module.exports = {
       colors: {
         main:'#080A1A',
         subMain: 'red',
-        dry:"#080A1A",
+        dry:"#051529",
         star:"yellow",
         text:"#F2F2F2",
         border:"#F2F2F2",

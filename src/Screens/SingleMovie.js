@@ -4,6 +4,7 @@ import { Movies } from '../Data/MoviesData';
 import { useParams } from 'react-router-dom'
 import MovieInfo from '../Components/Selection/MovieInfo';
 import MovieCasts from '../Components/Selection/MovieCasts';
+import MovieRates from '../Components/Selection/MovieRates';
 
 function SingleMovie() {
     const {id} = useParams();
@@ -15,6 +16,7 @@ function SingleMovie() {
             <div className="container mx-automin-h-screen px-2 my-2 ">
                 <MovieCasts />
             </div>
+            <MovieRates movie={movie}/>
         </Layout>
     )
 }

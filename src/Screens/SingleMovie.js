@@ -5,8 +5,8 @@ import { useParams } from 'react-router-dom'
 import MovieInfo from '../Components/Selection/MovieInfo';
 
 function SingleMovie() {
-    const { id } = useParams();
-    const movie = Movies.find((movie) => movie.id === id);
+    const {id} = useParams();
+    const movie = Movies.find(movie => movie.name === id);
 
     return (
         <Layout>

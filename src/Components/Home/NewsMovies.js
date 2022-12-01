@@ -25,8 +25,8 @@ function NewsMovies() {
           </div>
         </div>
         <div className='flex'>
-          <img src={require("../../Images/Phone.png")} alt='Monile App' className='w-full h-96 object-contain' />
-          <img src={require("../../Images/Phone.png")} alt='Monile App' className='w-full h-96 object-contain' />
+          <img src="/Images/Phone.png" alt='Monile App' className='w-full h-96 object-contain' />
+          <img src='/Images/Phone.png' alt='Monile App' className='w-full h-96 object-contain' />
         </div>
       </div>
     </div>

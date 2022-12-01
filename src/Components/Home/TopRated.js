@@ -35,7 +35,7 @@ function TopRated(movie) {
             Movies.map((movie, index) => (
               <SwiperSlide key={index}>
                 <div className='p-4 h-rate hovered border border-border bg-dry rounded-lg overflow-hidden'>
-                  <img src={movie?.titleImage}
+                  <img src={`/Images/movies/${movie?.titleImage}`}
                     alt={movie?.name}
                     className='w-full  h-full object-cover rounded-lg'
                   />
@@ -44,7 +44,7 @@ function TopRated(movie) {
                   <button className='w-12 h-12 flex-colo transitions hover:bg-subMain rounded-full bg-white bg-opacity-30'>
                     <FaHeart />
                   </button>
-                  <Link to={`/movie/${movie.name}`} className='font-semibold text-xl trancuted line-clamp-2'>
+                  <Link to={`/Images/movies/${movie?.name}`} className='font-semibold text-xl trancuted line-clamp-2'>
                     {movie.name}
                   </Link>
                   <div className='flex gap-2 text-start'>

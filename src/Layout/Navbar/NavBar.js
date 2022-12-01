@@ -19,7 +19,7 @@ function NavBar() {
                     {/* Logo */}
                     <div className="col-span-1 lg:block hidden">
                         <Link to="/">
-                            <img src={require('../../Images/Logonetflix.png')}
+                            <img src="/Images/Logonetflix.png" 
                                 className="w-full h-12 object-container"
                                 alt="logo" />
                         </Link>

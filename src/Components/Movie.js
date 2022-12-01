@@ -6,7 +6,7 @@ function Movies({ movie }) {
   return (
     <div className='border border-border p-1 hover:scale-95 transitions relative rounded overflow-hidden'>
       <Link to={`/movie/${movie?.name}`} className="w-full">
-        <img src={movie?.image} alt={movie?.name} className='w-full h-64 object-cover'
+        <img src={`/Images/movies/${movie?.image}`} alt={movie?.name} className='w-full h-64 object-cover'
         />
 
       </Link>

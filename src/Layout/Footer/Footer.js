@@ -92,7 +92,7 @@ function Footer() {
                     <div className='col-span-1 md:col-span-2 lg:col-span-3 pb-3.5 sm:pb-0'>
                         <Link to='/'>
                             <img
-                                src={require('../../Images/Logonetflix.png')}
+                                src='/Images/Logonetflix.png'
                                 className='w-2/4 h-12 object-contain'
                                 alt='logo' />
                         </Link>

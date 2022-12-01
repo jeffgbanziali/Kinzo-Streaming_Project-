@@ -1,8 +1,7 @@
-import { Listbox } from '@headlessui/react'
-import React from 'react'
-import { useState } from 'react'
-import CategoriesData from '../Data/CategoriesData'
-
+import React, { useState, Fragment } from 'react'
+import { Listbox, Transition  } from '@headlessui/react'
+import CategoriesData from "../../Data/CategoriesData";
+import { CgSelect} from "react-icons/cg";
 
 
 
@@ -32,7 +31,7 @@ const RatesData = [
     { title: "5 Star" },
 ]
 
-function Filters() {
+function Filters({filter}) {
     const [catergory, setCatergory] = useState({ title: "category " });
     const [year, setYear] = useState(YearData[0]);
     const [time, setTime] = useState(TimesData[0]);
@@ -41,22 +40,22 @@ function Filters() {
     const Filter = [
         {
             value: catergory,
-            onchange: setCatergory,
+            onChange: setCatergory,
             items: CategoriesData,
         },
         {
             value: year,
-            onchange: setYear,
+            onChange: setYear,
             items: YearData,
         },
         {
             value: time,
-            onchange: setTime,
+            onChange: setTime,
             items: TimesData,
         },
         {
             value: rate,
-            onchange: setRate,
+            onChange: setRate,
             items: RatesData,
         }
     ]
@@ -64,11 +63,27 @@ function Filters() {
         <div className='my-6 bg-dry border text-dryGray border-gray-800 grid md:grid-cols-4 grid-cols-2 lg:gap-12 gap-2 rounded p-6'>
             {
                 Filter.map((item, index) => (
-                    <Listbox key={index} value={item.value} onChange={item.onchange}>
+                    <Listbox key={index} value={item.value} onChange={item.onChange}>
                         <div className="relative">
-                            <Listbox.Button className="relative w-full  text-white border border-gray-800 bg-main rounded-lg shadow-sm cursor-default py-4 pl-6 pr-10 text-left text-sm">
+                            <Listbox.Button className="relative w-full  text-white border border-gray-800 bg-main rounded-lg cursor-default py-4 pl-6 pr-10 text-left  text-xs">
                                 <span className="block truncate">{item.value.title}</span>
+                                <span className="absolute inset-y-0 right-0 flex items-center pointer-events-none pr-2">
+                                    <CgSelect className="h-5 w-5" ariaHidden="true"/>
+                                </span>
                             </Listbox.Button>
+                            <Transition as={Fragment} leave="transition ease-in duration-100" leaveFrom="opacity-100" leaveTo="opacity-0">
+                                <Listbox.Options className="absolute w-full py-1 mt-1 overflow-auto text-base bg-main rounded-md shadow-lg max-h-60 ring-1 ring-black ring-opacity-5 focus:outline-none sm:text-sm">
+                                    {
+                                        item.items.map((iterm, i) => (
+                                            <Listbox.Option key={i} className={({active}) => `relative cursor-default select-none py-2 pl-10 pr-4 ${
+                                                active ? 'text-white bg-gray-900' : 'text-main'}`} value={iterm}>
+                                                
+                                           </Listbox.Option>
+                                        ))
+
+                                    }
+                                </Listbox.Options>
+                            </Transition>
                         </div>
                     </Listbox>
                 ))

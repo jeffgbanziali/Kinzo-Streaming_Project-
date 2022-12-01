@@ -3,6 +3,7 @@ import Layout from '../Layout/Layout'
 import { Movies } from '../Data/MoviesData';
 import { useParams } from 'react-router-dom'
 import MovieInfo from '../Components/Selection/MovieInfo';
+import MovieCasts from '../Components/Selection/MovieCasts';
 
 function SingleMovie() {
     const {id} = useParams();
@@ -11,6 +12,9 @@ function SingleMovie() {
     return (
         <Layout>
             <MovieInfo movie={movie} />
+            <div className="container mx-automin-h-screen px-2 my-2 ">
+                <MovieCasts />
+            </div>
         </Layout>
     )
 }

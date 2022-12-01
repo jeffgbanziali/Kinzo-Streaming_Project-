@@ -20,7 +20,7 @@ function MovieInfo({ movie }) {
                     <div className="col-span-2 md:grid grid-cols-5 gap-4 items-center ">
                         <div className="col-span-3 flex flex-colo gap-10">
                             {/*Title*/}
-                            <h1 className="text-2xl font-semibold">*
+                            <h1 className="text-2xl font-semibold">
                             {movie?.name}
                             </h1>
                             {/*flex items*/}

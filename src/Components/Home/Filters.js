@@ -1,6 +1,5 @@
 import React, { useState, Fragment } from 'react'
 import { Listbox, Transition  } from '@headlessui/react'
-import CategoriesData from "../../Data/CategoriesData";
 import { CgSelect} from "react-icons/cg";
 
 
@@ -31,7 +30,7 @@ const RatesData = [
     { title: "5 Star" },
 ]
 
-function Filters({filter}) {
+function Filters() {
     const [catergory, setCatergory] = useState({ title: "category " });
     const [year, setYear] = useState(YearData[0]);
     const [time, setTime] = useState(TimesData[0]);
@@ -41,7 +40,7 @@ function Filters({filter}) {
         {
             value: catergory,
             onChange: setCatergory,
-            items: CategoriesData,
+           
         },
         {
             value: year,
